@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p><center>JavaScript Examples</center></p>
+<button onclick="showPromptBox()">Click here to see prompt box</button>
+<p id="pId"></p>
+<script>
+function showPromptBox() {
+var text;
+var username = prompt("Please enter your username", "");
+if (username == null || username == "") {
+text = "Empty.";
+} else {
+text = "Hello ! " + username + " Welcome to Web Development Application Programme.";
+}
+document.getElementById("pId").innerHTML =text;
+}
+</script>
+</body>
+</html>
